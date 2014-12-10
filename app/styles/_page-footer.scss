@@ -1,0 +1,57 @@
+.page-footer {
+  font-family: "Century", serif;
+  color: $gold;
+  font-weight: 500;
+  .creep {
+    font-size: .9em;
+  }
+  .copyright {
+    font-size: 1em;
+    float: left;
+    width: 60%;
+    p {
+      padding-top: 30px;
+      vertical-align: top;
+    }
+  }
+  .social {
+    float: right;
+    width: 40%;
+    padding-top: 20px;
+    p {
+      padding-left: 70px;
+      margin: 0;
+      padding-top: 10px;
+    }
+  }
+  p {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+  }
+  h2 {
+    @include visuallyhidden;
+  }
+  ul {
+    @include clearfix;
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+    float: right;
+  }
+  li {
+    display: inline-block;
+    margin-right: 1.8em;
+    padding: 0 .25em;
+    border-bottom: 0.4em solid transparent;
+  }
+  a {
+    color: $gold;
+    text-decoration: solid;
+    padding: 0.5em 0;
+    display: inline-block;
+    &:hover {
+      color: $black;
+    }
+  }
+}
