@@ -1,27 +1,38 @@
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 950px;
+}
 .work {
-    font-family: sans-serif;
-    color: $white;
+    position: relative;
     margin: 10px;
+    padding: 0px;
     width: 290px;
     height: 290px;
     float: left;
-    &:hover {
-      background: rgba(0,0,0,.8);
-      h1 {
-        display: block;
-      }
-    }
     img {
       z-index: -10;
-      max-width: none;
     }
     h1 {
-      font-size: 1em;
+      font-family: 'Century Gothic', sans-serif;
+      font-weight: normal;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      font-size: 1.5em;
       line-height: 1.05em;
       text-align: center;
       margin: 0;
+      padding: 0;
       display: none;
-      top: 50%;
-      padding-top: 135px;
+      color: $white;
+      transform: translate(0%, 500%);
+    }
+    &:hover {
+    background: rgba(0,0,0,.8);
+    margin: 10;
+    padding: 0;
+    h1 {
+      display: block;
+      }
     }
 }
